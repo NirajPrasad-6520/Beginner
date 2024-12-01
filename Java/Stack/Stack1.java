@@ -33,7 +33,7 @@ public class Stack1
         stack1.push(5);
 
         stack2.push("This");
-        stack2.push("is");
+        stack2.push("is ");
         stack2.push("string");
         stack2.push("stack");
 
