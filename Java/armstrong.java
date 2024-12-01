@@ -21,7 +21,7 @@ public class armstrong {
         }
 
         if(c == arm)
-        System.out.println(c + " is Armstrong number.");
+        System.out.println(c + " is Armstrong number. ");
         else
         System.out.println(c + " is not Armstrong number.");
         System.out.println();
