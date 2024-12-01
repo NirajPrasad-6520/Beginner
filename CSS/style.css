@@ -1,0 +1,381 @@
+*{
+    background-color :rgb(223, 184, 134);
+}
+#hdd1{                         /*Welcome to CSS(Cascading Style Sheet) */
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+}
+#img1{             /*logo*/
+    height: 60px;
+    width: 60px;
+}
+.ques{                   /*Question*/
+    color: red;
+    font-weight: bold;
+}
+#box{                               /*lorem*/
+    background-color: blue;
+}
+.heading{                           /*heading*/
+    color: red;
+}
+button{                             /*click me*/
+    background-color: green;
+}
+#hd2{
+    text-decoration: blue wavy underline;
+}
+#hd3{
+    text-decoration: overline;
+}
+#hd4{
+    text-decoration: line-through;
+}
+#hd1{                            /*Practice-2*/
+    text-align: center;
+    text-transform: capitalize;
+}
+.para{                         /*Practice-2*/
+    font-family: 'Times New Roman';
+}
+#divone{
+    font-size: 25px;
+}
+#divtwo{
+    font-size: 10px;
+}
+#div2{                       /*Box Model is CSS*/
+    height: 100px;
+    width: 200px;
+    background-color:chartreuse;
+    border: 2px dotted black;
+    text-align: center;
+    border-radius: 10px;
+    /* padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; */
+    /*padding: 50px; /*All padding side are equally set 50px*/
+    padding: 1px 2px 3px 4px;/*Top,Right,Bottom,Left-->clockwise(shorthand)*/
+    /*margin: 50px;/*All margin side are equally set 50px*/
+    margin: 1px 2px 3px 4px;/*Top,Right,Bottom,Left-->clockwise(shorthand)*/
+}
+#div3                       /*Practice Set-3*/
+{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+section
+{
+    border: 1px solid black;
+}
+#sec1{
+    padding: 5px;
+}
+#navbar{
+   /* border: 3px solid white;*/
+    height: 50px;
+    width: 98.5%;
+    background-color: black;
+    /*margin: 8px;*/
+    padding: 10px;
+    display: inline-block;
+}
+#aa1{                       /*For Header*/
+    font-size: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin-left: 30px;
+    margin-right: 70px;
+}
+#img2{                   /*amazon logo*/
+    height: 50px;
+    width: 180px;
+    background-color: white;
+}
+#inp1{                           /*search box*/
+    background-color: white;
+}
+#btn{
+    background-color: orange;
+}
+#aa2,#aa3,#aa4,#aa5,#aa6,#aa7,#aa8,#aa9{            /*box for image content like:kids,women,men etc*/
+    height: 150px;
+    width: 135px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 8px;
+}
+#aa2{                                              /*kids box*/
+    background-color: rgba(255,0,0,0.5);
+    background-image: url(Kids.jpeg);
+    background-size: cover;
+    padding-right: 30px;
+}
+#aa3{                                             /*women box*/
+    background-color: rgba(0,255,0,0.5);
+    left: 10px;
+    background-image: url(images3.jpeg);
+    background-size: cover;
+}
+#aa4{                                           /*men box*/
+    background-color: rgba(0,0,255,0.5);
+    background-image: url(images1.jpeg);
+    background-size: cover;
+}
+#aa5{                                          /*kitchen box*/
+    background-image: url(kitchen.webp);
+    background-size: cover;
+}
+#aa6{                                         /*bike box*/
+    background-image: url(bike.jpg);
+    background-size: cover;
+    padding-right: 10px;
+}
+#aa7{                                        /*bathroom box*/
+    background-image: url(bathroom.webp);
+    background-size: cover;
+    margin-right: 10px;
+}
+#aa8{                                       /*earbuds box*/
+    background-image: url(earbuds.jpg);
+    background-size: cover;
+    padding-right: 5px  ;
+}
+#aa9{                                       /*Jewellery box*/
+    background-image: url(jelwry.jpeg);
+    background-size: cover;
+    padding-right: 10px;
+}
+footer{
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 60px ;
+}
+#content{                                 /*content section*/
+    background-color:white;
+    height: 600px;
+    padding: 10px;
+}
+#sec2{
+    width: 100%;
+    background-color: black;
+}
+#a2,#a3,#a4,#a5,#a6,#a7,#a8,#a9{                /*bottom-text for box like kids,women etc*/ 
+    text-decoration: none;
+    color: black;
+}
+
+#a2{                                         /*kids text*/
+    background-color: white;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 20px;
+    padding-left: 50px ;
+}
+#a3{                                         /*women text*/
+    text-align: center;
+    background-color: white;
+    margin-right: 15px;
+    margin-left: 80px;
+}
+#a4{                                        /*men text*/
+    text-align: center;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+#a5{                                        /*kitchen tex*/
+    text-align: center;
+    background-color: white;
+    margin-left: 47px;
+    padding-left: 38px;
+}
+#a6{                                      /*bike text*/
+    text-align: center;
+    background-color: white;
+    margin-left: 50px;
+    padding-left: 15px;
+}
+#a7{                                      /*bathroom text*/
+    text-align: left;
+    background-color: white;
+    margin-right: 20px;
+    padding-left: 35px;
+}
+#a8{                                     /*earbuds text*/
+    text-align: right;
+    background-color: white;
+    margin-right: 65px;
+    padding-left: 35px;
+}
+#a9{                                      /*Jewellery*/
+    text-align: right;
+    background-color: white;
+    padding-left: 35px;
+}
+#aa10{                                    /*appliance for your home*/
+    border: 2px solid black;
+    height: 350px;
+    width: 300px;
+    background-image: url(ama_ss.png);
+    background-size: cover;
+
+}
+#aa10,#aa11,#aa12{
+    display: inline-block;
+    margin: 10px;
+}
+#aa11{                                 /*sale gif*/
+    border: 2px solid black;
+    height: 350px;
+    width: 565px;
+    background-image: url(dribble_gif.gif);
+    background-size: cover;
+}
+#aa12{                                /*top picks*/
+    border: 2px solid black;
+    height: 350px;
+    width: 300px;
+    background-image: url(ama1_ss.png);
+    background-size: cover;
+}
+#sec3{                               /*section for flexplayground*/
+    text-align: center;
+    height: 400px;
+}
+#cont1{                             /*content section*/
+      height: 300px;
+      width: 600;
+      border: 2px solid black;
+      /* display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items:center; */
+}
+#div15,#div16,#div17,#div18,#div19{           /*box for flexplayground*/
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+#div15{
+    background-color: aqua;
+}
+#div16{
+    background-color:brown;
+}
+#div17{
+    background-color:darkblue;
+    flex-shrink: 2;
+}
+#div18{
+    background-color:orange;
+}
+#div19{
+    background-color: green;
+}
+#sec4{
+    height: 600px;
+    background-color: tomato;
+}
+#div20,#div21,#div22,#div23{
+    margin: 50px;
+    display: inline-block;
+}
+#div20{
+    background-color: aqua;
+    height: 130px;
+    width: 160px;
+    border: 2px solid black;
+    align-content: center;
+    /* transition-property: all;
+    transition-duration: 2s;    
+    transition-timing-function: steps(5);
+    transition-delay: 1s; */
+    transition: all 2s ease-in-out 0s;
+}
+#div20:hover{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+#div20:active{
+    background-color: pink;
+    color:brown;
+}
+#div21{
+    background-color: darkgreen;
+    height: 100px;
+    width: 150px;
+    border: 2px solid black;
+   transform: rotate(20deg);
+   /* transform: scale(2);
+    transform: scale(2,3);*/
+    
+}
+#div21:hover{
+    background-color: red;
+    /*transform: scale(2,3);
+    transform: translate(100px);*/
+    transform: skew(120deg);
+}
+#div22{
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    animation-name:  colorAnimate;
+    animation-duration:  0.22s ;
+  /*animation-timing-function: ease-in;*/
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorAnimate{
+    from {
+        background-color: aqua; }
+        to {background-color: red}
+}
+#div23{
+    height: 150px;
+    width: 150px;
+    background-color: darkorchid;
+    border: 2px solid black;
+  /*animation-name:movinganimate;
+    animation-duration:  2s ;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;*/
+    animation: spineanimate 4s ease-in-out 0s infinite reverse;
+}
+@keyframes spineanimate {
+    from { left: 0px; }
+    to { left: 100px;}
+}
+.loader{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: sandybrown;
+    border: 20px solid yellow;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 80px;
+    border-top: 20px solid red;
+    animation: spineanimate 2s steps(5) 0s infinite normal;
+}
+@keyframes spineanimate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {transform: rotate(360deg);}
+}
