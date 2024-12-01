@@ -31,6 +31,7 @@ public class ReverseStack
         s.push(3);
 
         // Create a copy of the original stack to print it
+        @SuppressWarnings("unchecked")
         Stack<Integer> originalStack = (Stack<Integer>) s.clone();
 
         System.out.println("Original Stack:");
