@@ -39,6 +39,6 @@ public class SumOfNodes {
         int nodeSum = sumOfNodes(root);
 
         // Print the result
-        System.out.println("Total number of nodes in the tree: " + nodeSum);
+        System.out.println("Total sum of nodes in the tree: " + nodeSum);
     }
 }
