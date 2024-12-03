@@ -56,7 +56,7 @@ public class SubtreeOfAnotherTree
 
         TreeNode subtree = new TreeNode(4);
         subtree.left = new TreeNode(1);
-        subtree.right = new TreeNode(9);
+        subtree.right = new TreeNode(2);
 
         System.out.println(isSubtree(tree, subtree));
     }
