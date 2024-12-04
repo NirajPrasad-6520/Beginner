@@ -1,6 +1,6 @@
 package BinaryTree.Hashing;
 //Given an integer array of size n,find all elements that appear more than[n/3] times.
-//num[] = {1,3,2,5,1,3,1,5,1};
+//num[] = {1,3,2,5,1,3,1,5,1}; 
 //num[] = {1,2};
 import java.util.*;
 public class Question1
