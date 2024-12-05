@@ -6,6 +6,132 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Question1",
+            "request": "launch",
+            "mainClass": "Trie.Question1",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "InsertAndSearch",
+            "request": "launch",
+            "mainClass": "Trie.InsertAndSearch",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Question2",
+            "request": "launch",
+            "mainClass": "Trie.Question2",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Question2",
+            "request": "launch",
+            "mainClass": "BinaryTree.Trie.Question2",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Question1",
+            "request": "launch",
+            "mainClass": "BinaryTree.Trie.Question1",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "InsertAndSearch",
+            "request": "launch",
+            "mainClass": "BinaryTree.Trie.InsertAndSearch",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Trie1",
+            "request": "launch",
+            "mainClass": "BinaryTree.Trie.Trie1",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Insertions",
+            "request": "launch",
+            "mainClass": "BinaryTree.Trie.Insertions",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Question5",
+            "request": "launch",
+            "mainClass": "BinaryTree.Hashing.Question5",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Question4",
+            "request": "launch",
+            "mainClass": "BinaryTree.Hashing.Question4",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Question3",
+            "request": "launch",
+            "mainClass": "BinaryTree.Hashing.Question3",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Question2",
+            "request": "launch",
+            "mainClass": "BinaryTree.Hashing.Question2",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Question1",
+            "request": "launch",
+            "mainClass": "BinaryTree.Hashing.Question1",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "HashMaps1",
+            "request": "launch",
+            "mainClass": "BinaryTree.Hashing.HashMaps1",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "HashSets",
+            "request": "launch",
+            "mainClass": "BinaryTree.Hashing.HashSets",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "Hashing",
+            "request": "launch",
+            "mainClass": "BinaryTree.Hashing.Hashing",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "BSTPaths",
+            "request": "launch",
+            "mainClass": "BinaryTree.BST.BSTPaths",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "BSTRangePrinter",
+            "request": "launch",
+            "mainClass": "BinaryTree.BST.BSTRangePrinter",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
             "name": "DeleteBST",
             "request": "launch",
             "mainClass": "BinaryTree.BST.DeleteBST",
