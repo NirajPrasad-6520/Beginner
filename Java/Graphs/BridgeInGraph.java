@@ -1,4 +1,5 @@
 package Graphs;
+//Bridge is an edge whose deletion increase the graph's number of connected components
 import java.util.*;
 
 // Class to find bridges in a graph
