@@ -27,19 +27,18 @@ public class DijkstraAlgorithm
             graph[i] = new ArrayList<Edge>();
         }
         
-        // Add edges to the graph
-        graph[0].add(new Edge(0, 1, 2)); // Edge from vertex 0 to 1 with weight 2
-        graph[0].add(new Edge(0, 2, 4)); // Edge from vertex 0 to 2 with weight 4
+        graph[0].add(new Edge(0, 1, 2));
+        graph[0].add(new Edge(0, 2, 4));
         
-        graph[1].add(new Edge(1, 3, 7)); // Edge from vertex 1 to 3 with weight 7
-        graph[1].add(new Edge(1, 2, 1)); // Edge from vertex 1 to 2 with weight 1
+        graph[1].add(new Edge(1, 3, 7));
+        graph[1].add(new Edge(1, 2, 1));
         
-        graph[2].add(new Edge(2, 4, 3)); // Edge from vertex 2 to 4 with weight 3
+        graph[2].add(new Edge(2, 4, 3));
         
-        graph[3].add(new Edge(3, 5, 1)); // Edge from vertex 3 to 5 with weight 1
+        graph[3].add(new Edge(3, 5, 1));
         
-        graph[4].add(new Edge(4, 3, 2)); // Edge from vertex 4 to 3 with weight 2
-        graph[4].add(new Edge(4, 5, 5)); // Edge from vertex 4 to 5 with weight 5
+        graph[4].add(new Edge(4, 3, 2));
+        graph[4].add(new Edge(4, 5, 5));
     }
     
     // Helper class to represent a node and its distance for the priority queue
