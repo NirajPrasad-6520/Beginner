@@ -6,6 +6,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PalindromeCheck",
+            "request": "launch",
+            "mainClass": "PalindromeCheck",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "primeNumber",
+            "request": "launch",
+            "mainClass": "primeNumber",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "practice1",
+            "request": "launch",
+            "mainClass": "Practice.practice1",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "ArticulationPoint",
+            "request": "launch",
+            "mainClass": "Graphs.ArticulationPoint",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "BridgeInGraph",
+            "request": "launch",
+            "mainClass": "Graphs.BridgeInGraph",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "KosarajusAlgorithm",
+            "request": "launch",
+            "mainClass": "Graphs.KosarajusAlgorithm",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "PimsAlgorithm",
+            "request": "launch",
+            "mainClass": "Graphs.PimsAlgorithm",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "BellmanFord",
+            "request": "launch",
+            "mainClass": "Graphs.BellmanFord",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "DijkstraAlgorithm",
+            "request": "launch",
+            "mainClass": "Graphs.DijkstraAlgorithm",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "TopologicalSorting",
+            "request": "launch",
+            "mainClass": "Graphs.TopologicalSorting",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "PrintAllPaths",
+            "request": "launch",
+            "mainClass": "Graphs.PrintAllPaths",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "DFSGraph",
+            "request": "launch",
+            "mainClass": "Graphs.DFSGraph",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "BFSGraph",
+            "request": "launch",
+            "mainClass": "Graphs.BFSGraph",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "AdjacencyList",
+            "request": "launch",
+            "mainClass": "Graphs.AdjacencyList",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
             "name": "Question1",
             "request": "launch",
             "mainClass": "Trie.Question1",
