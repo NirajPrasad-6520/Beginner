@@ -4,7 +4,7 @@
 // Note: 0 and 1 are not prime numbers. The 2 is the only even prime number because all the other even numbers can be divided by 2.
 
 import java.util.*;
-public class primeNumber
+public class PrimeNumber
 {
     public static void main(String[] args)
     {

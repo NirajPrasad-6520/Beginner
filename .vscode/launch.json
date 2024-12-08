@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PrimeNumber",
+            "request": "launch",
+            "mainClass": "PrimeNumber",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
             "name": "PalindromeCheck",
             "request": "launch",
             "mainClass": "PalindromeCheck",
