@@ -1,6 +1,6 @@
 package functions;
 import java.util.*;
-public class EvenOddFunction 
+public class EvenOddFunction
 {
     public static void printEvenOdd(int n)
     {
@@ -9,7 +9,7 @@ public class EvenOddFunction
         else
         System.out.println("Odd");
     }
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter nubmer to check even or odd : ");
