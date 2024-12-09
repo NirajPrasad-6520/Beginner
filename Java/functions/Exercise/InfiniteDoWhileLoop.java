@@ -1,10 +1,10 @@
 package functions.Exercise;
 
-public class InfiniteDoWhileLoop 
+public class InfiniteDoWhileLoop
 {
-        public static void main(String[] args) 
+        public static void main(String[] args)
         {
-            do 
+            do
             {
                 System.out.println("This loop will run forever. ");
             } while (true);
