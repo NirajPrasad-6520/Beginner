@@ -1,27 +1,40 @@
 package Recursion;
-//Print keypad combination
-public class Recursion15 
-{
+// Print keypad combinations using recursion
+public class Recursion15 {
+    // Keypad mapping for digits 0-9
     public static String[] keypad = {".", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz"};
 
-    public static void printcomb(String str, int idx, String combination)
+    // Recursive method to print all combinations
+    public static void printCombinations(String input, int index, StringBuilder combination)
     {
-        if(idx == str.length())
+        // Base case: When all digits are processed
+        if (index == input.length())
         {
-            System.out.println(combination);
+            System.out.println(combination.toString());
             return;
         }
-        char currChar =str.charAt(idx);
+
+        // Get the current digit and corresponding mapping
+        char currChar = input.charAt(index);
+        if (currChar < '0' || currChar > '9')
+        {
+            System.out.println("Invalid input: only digits are allowed.");
+            return;
+        }
+
         String mapping = keypad[currChar - '0'];
 
-        for(int i = 0; i < mapping.length(); i++)
+        // Recursive calls for each character in the mapping
+        for (int i = 0; i < mapping.length(); i++)
         {
-            printcomb(str, idx + 1, combination + mapping.charAt(i));
+            combination.append(mapping.charAt(i)); // Add the current character
+            printCombinations(input, index + 1, combination);
+            combination.deleteCharAt(combination.length() - 1); // Backtrack
         }
     }
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
-        String str = "23";
-        printcomb(str, 0, "");        
+        String input = "23"; // Input string (digits only)
+        printCombinations(input, 0, new StringBuilder());
     }
 }
