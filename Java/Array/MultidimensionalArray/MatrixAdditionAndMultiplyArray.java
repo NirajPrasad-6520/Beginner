@@ -1,36 +1,44 @@
 package Array.MultidimensionalArray;
-
-public class MatrixAdditionAndMultiplyArray 
+// Class definition for Matrix addition and multiplication
+public class MatrixAdditionAndMultiplyArray
 {
-    public static void main(String[] args) 
+
+    // Main method - the program entry point
+    public static void main(String[] args)
     {
-        //Addition Matrix
+        // Addition of two matrices
         System.out.println("Addition Matrix :");
-        int a[][]={{1,3,4},{2,4,3},{3,4,5}};    
-        int b[][]={{1,3,4},{2,4,3},{1,2,4}};
+        
+        // Define two 3x3 matrices
+        int a[][] = { {1, 3, 4}, {2, 4, 3}, {3, 4, 5} };
+        int b[][] = { {1, 3, 4}, {2, 4, 3}, {1, 2, 4} };
 
-        int [][] arr = new int[3][3];
+        // Declare a 3x3 result matrix for addition
+        int[][] arr = new int[3][3];
 
-        for(int i = 0; i < 3; i++)
+        // Perform addition of the two matrices element by element
+        for (int i = 0; i < 3; i++)
         {
-            for(int j = 0; j<3; j++)
+            for (int j = 0; j < 3; j++)
             {
-                arr[i][j] = a[i][j] + b[i][j];
+                arr[i][j] = a[i][j] + b[i][j]; // Add corresponding elements
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
 
-        //Multiply Matrix
+        // Multiplication of two matrices
         System.out.println("Multiply Matrix :");
-        for(int i = 0; i < 3; i++)
+        
+        // Perform multiplication of the two matrices element by element
+        for (int i = 0; i < 3; i++)
         {
-            for(int j = 0; j<3; j++)
+            for (int j = 0; j < 3; j++)
             {
-                arr[i][j] = a[i][j] * b[i][j];
+                arr[i][j] = a[i][j] * b[i][j]; // Multiply corresponding elements
                 System.out.print(arr[i][j] + " ");
-            }    
-            System.out.println();    
+            }
+            System.out.println();
         }
     }
 }
