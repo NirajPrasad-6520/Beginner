@@ -1,4 +1,5 @@
 package BinaryTree.BST;
+
 //Insertion in Binary Search Tree using Recursion:
 class Node
 {
