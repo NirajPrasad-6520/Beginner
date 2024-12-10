@@ -4,7 +4,7 @@ public class SwapString
 {
     public static void main(String[] args)
     {
-        String str1 = "Good ", str2 = "morning ";
+        String str1 = "Good", str2 = "morning";
 
         System.out.println("Strings before swapping: " + str1 + " " + str2);
             
@@ -13,11 +13,11 @@ public class SwapString
         
         // Step 2: Extract the original str2 (which is now at the beginning of the combined string)
         // Use substring to extract the first part of str1 up to the length of the original str2
-        str2 = str1.substring(0, (str1.length() - str2.length()));
+        str2 = str1.substring(0, (str1.length() - str2.length()));// Extract "Good "
         
         // Step 3: Extract the original str1 (which is now at the end of the combined string)
         // Use substring to extract the remaining part of str1 after the original str2
-        str1 = str1.substring(str2.length());
+        str1 = str1.substring(str2.length());// Extract "morning "
 
         System.out.println("Strings after swapping: " + str1 + " " + str2);
     }
