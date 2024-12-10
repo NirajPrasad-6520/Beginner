@@ -1,21 +1,27 @@
 package Recursion;
-//Tower of Hanoi
-public class Recursion8 
+// Tower of Hanoi problem
+public class Recursion8
 {
-    public static void TowerOfHanoi(int n , String src, String helper, String dest)
+    public static void towerOfHanoi(int n, String src, String helper, String dest) 
     {
-        if(n == 1)
+        // Base case: If there's only one disk, move it directly to the destination
+        if (n == 1)
         {
-            System.out.println("transfer disk " + n + " form " + src + " to " + dest);
+            System.out.println("Transfer disk " + n + " from " + src + " to " + dest);
             return;
         }
-        TowerOfHanoi(n - 1, src, dest, helper);
-        System.out.println("transfer disk " + n + " form " + src + " to " + dest);
-        TowerOfHanoi(n - 1, helper, src, dest);
+        // Recursive case: Move n-1 disks from src to helper using dest as a helper
+        towerOfHanoi(n - 1, src, dest, helper);
+
+        // Move the nth disk from src to dest
+        System.out.println("Transfer disk " + n + " from " + src + " to " + dest);
+
+        // Move the n-1 disks from helper to dest using src as a helper
+        towerOfHanoi(n - 1, helper, src, dest);
     }
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
-        int n = 3; //n = 1; n = 2; n = 3;
-        TowerOfHanoi(n," S", "H","D");
-    }    
+        int n = 3; // Number of disks
+        towerOfHanoi(n, "S", "H", "D"); // S = Source, H = Helper, D = Destination
+    }
 }
