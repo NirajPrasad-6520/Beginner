@@ -1,31 +1,33 @@
 package Recursion;
-//remove duplicates in a string
-public class Recursion12 
+// Remove duplicates in a string using recursion
+public class Recursion12
 {
-    public static boolean[] map = new boolean [26];
+    // Boolean array to track seen characters
+    public static boolean[] seen = new boolean[26];
 
-    public static void removeDuplicates(String str, int idx, String newString)
+    // Recursive method to remove duplicates
+    public static String removeDuplicates(String str, int index, StringBuilder result)
     {
-        if(idx == str.length())
+        // Base case: End of the string
+        if (index == str.length())
         {
-            System.out.println(newString);
-            return;
+            return result.toString();
         }
-        char currChar = str.charAt(idx);
-        if(map[currChar - 'a'])
+        // Current character
+        char currChar = str.charAt(index);
+
+        // Check if the character is already seen
+        if (!seen[currChar - 'a'])
         {
-            removeDuplicates(str, idx + 1, newString);
+            result.append(currChar); // Add unique character to result
+            seen[currChar - 'a'] = true; // Mark the character as seen
         }
-        else
-        {
-            newString += currChar;
-            map[currChar - 'a'] = true;
-            removeDuplicates(str, idx + 1, newString);
-        }
+
+        // Recursive call for the next character
+        return removeDuplicates(str, index + 1, result);
     }
-    public static void main(String[] args) 
-    {
-        String str = "abbccdda";
-        removeDuplicates(str, 0, "");        
-    }    
+    public static void main(String[] args) {
+        String str = "abbccdda"; // Input string
+        System.out.println(removeDuplicates(str, 0, new StringBuilder())); // Output result
+    }
 }
