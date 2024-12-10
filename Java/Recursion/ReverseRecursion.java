@@ -1,21 +1,27 @@
 package Recursion;
-//Print a string in reverse.
-public class ReverseRecursion 
+// Print a string in reverse using recursion
+public class ReverseRecursion
 {
-    public static void printRev(String str, int idx)
+    // Recursive method to print the string in reverse
+    public static void printReverse(String str, int index)
     {
-        if(idx == 0)
+        // Base case: Empty string or reached the first character
+        if (str.isEmpty())
         {
-            System.out.println(str.charAt(idx));
+            System.out.println("The string is empty.");
             return;
         }
-        System.out.print(str.charAt(idx));
-        printRev(str, idx - 1);    
+
+        if (index < 0)
+        {
+            return; // End of recursion
+        }
+        System.out.print(str.charAt(index)); // Print current character
+        printReverse(str, index - 1); // Recursive call for the previous character
     }
-    //Time complexity = O(n)//n = str.length
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
-        String str = "abcd";
-        printRev(str, str.length() - 1);        
-    }    
+        String str = "abcd"; // Input string
+        printReverse(str, str.length() - 1); // Start recursion from the last character
+    }
 }
