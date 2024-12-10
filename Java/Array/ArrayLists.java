@@ -10,51 +10,53 @@ package Array;
 // 8. Loop/Iterate on the List
 // 9. Sort the List
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.ArrayList;  // Importing the ArrayList class from the java.util package
+import java.util.Collections;  // Importing the Collections class to sort the ArrayList
 
-public class ArrayLists 
+public class ArrayLists
 {
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
+        // Create a new ArrayList to store Integer values
         ArrayList<Integer> list = new ArrayList<Integer>();
 
-        //add elements
-        list.add(0);
-        list.add(3);
-        list.add(6);
+        // Add elements to the ArrayList using the add() method
+        list.add(0);  // Adding 0 to the list
+        list.add(3);  // Adding 3 to the list
+        list.add(6);  // Adding 6 to the list
         
+        // Print the list after adding elements
         System.out.println("Add Elements : " + list);
 
-        //get elements
-        int elements = list.get(1);
-        System.out.println("Get Element : " + elements);
+        // Get an element at index 1 (second element)
+        int elements = list.get(1);  // Get the element at index 1
+        System.out.println("Get Element : " + elements);  // Print the retrieved element
 
-        //add el in btw 
-        list.add(1, 1);
-        System.out.println("Add element in between list : " + list);
+        // Insert an element at index 1 (second position)
+        list.add(1, 1);  // Inserting 1 at position 1
+        System.out.println("Add element in between list : " + list);  // Print the updated list
         
-        //set element
-        list.set(1, 8);
-        System.out.println("Set Element : " + list);
+        // Modify the element at index 1 (second position)
+        list.set(1, 8);  // Set the value at index 1 to 8
+        System.out.println("Set Element : " + list);  // Print the list after setting a new value
 
-        //delete element
-        list.remove(3);
-        System.out.println("Delete Elements: " + list);
+        // Remove the element at index 3 (fourth position)
+        list.remove(3);  // Removing the element at index 3
+        System.out.println("Delete Elements: " + list);  // Print the list after deletion
 
-        //size
-        int size = list.size();
-        System.out.println("Size: " + size);
+        // Get the size of the ArrayList
+        int size = list.size();  // Getting the size of the list
+        System.out.println("Size: " + size);  // Print the size of the list
 
-        //loops
+        // Loop through the list using a for loop and print each element
         for(int i = 0; i < list.size(); i++)
         {
-            System.out.print(list.get(i));
+            System.out.print(list.get(i));  // Print each element of the list
         }
-        System.out.println();
+        System.out.println();  // Add a new line after printing all elements
 
-        //sorting 
-        Collections.sort(list);
-        System.out.println("Sorting : " + list);
-    }   
+        // Sort the list in ascending order using Collections.sort()
+        Collections.sort(list);  // Sorting the list
+        System.out.println("Sorting : " + list);  // Print the sorted list
+    }
 }
