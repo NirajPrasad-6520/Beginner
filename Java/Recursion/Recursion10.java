@@ -1,26 +1,35 @@
 package Recursion;
-//check if an array is sorted(Strictly Increasing)
-public class Recursion10 
+// Check if an array is sorted (Strictly Increasing)
+public class Recursion10
 {
-    public static boolean isSorted(int arr[], int idx)
-    {
-        if(idx == arr.length-1)
+    // Recursive method to check if the array is sorted
+    public static boolean isSorted(int arr[], int index) {
+        // Handle edge case: Empty or single-element arrays are always sorted
+        if (arr.length <= 1)
         {
             return true;
         }
-        if(arr[idx] < arr[idx + 1])
+        // Base case: Reached the last element, array is sorted
+        if (index == arr.length - 1)
         {
-            //array is sorted till now 
-            return isSorted(arr, idx + 1);
+            return true;
         }
-        else 
+        
+        // Check if the current element is less than the next element
+        if (arr[index] < arr[index + 1])
         {
+            // Recursive call to check the rest of the array
+            return isSorted(arr, index + 1);
+        }
+        else
+        {
+            // Return false if a pair is out of order
             return false;
         }
     }
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
-        int arr[] = {1, 3, 6};
-        System.out.println(isSorted(arr, 0));        
+        int arr[] = {1, 3, 6}; // Test case: strictly increasing
+        System.out.println(isSorted(arr, 0)); // Output: true
     }
 }
