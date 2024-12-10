@@ -1,33 +1,39 @@
 package Recursion;
-//Move all 'x' to the end of the string
-public class Recursion11 
+// Move all 'x' to the end of the string using recursion
+public class Recursion11
 {
-    public static void moveAllX(String str, int idx, int count, String newString)
-    {
-        if(idx == str.length())
+    // Recursive method to move all 'x' to the end
+    public static void moveAllX(String str, int index, int count, StringBuilder result) {
+        // Base case: When the entire string has been processed
+        if (index == str.length())
         {
-            for(int i = 0; i < count; i++)
+            // Append all remaining 'x' at the end
+            for (int i = 0; i < count; i++)
             {
-                newString += 'x';
+                result.append('x');
             }
-            System.out.println(newString);
+            System.out.println(result.toString());
             return;
         }
-        char currChar = str.charAt(idx);
-        if(currChar == 'x')
+        // Current character
+        char currChar = str.charAt(index);
+
+        // Check if the character is 'x'
+        if (currChar == 'x')
         {
-            count++;
-            moveAllX(str, idx + 1, count, newString);
+            count++; // Increment count of 'x'
         }
         else
         {
-            newString += currChar;
-            moveAllX(str, idx + 1, count, newString);
+            result.append(currChar); // Add non-'x' characters to the result
         }
+
+        // Recursive call for the next character
+        moveAllX(str, index + 1, count, result);
     }
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
-        String str = "axbcxxd";
-        moveAllX(str, 0, 0, "");
-    }    
+        String str = "axbcxxd"; // Input string
+        moveAllX(str, 0, 0, new StringBuilder()); // Start the recursive process
+    }
 }
