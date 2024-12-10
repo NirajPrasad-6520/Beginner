@@ -1,36 +1,43 @@
 package Recursion;
-//Find the first & last occurance of an element in string . 
-//element ='a';
-public class Recursion9 
+// Find the first & last occurrence of an element in a string.
+// Element = 'a'
+public class Recursion9
 {
-    public static int first = -1;
-    public static int last = -1;
-    
-    public static void findOccurance(String str, int idx, char element)
+    // Helper function to find occurrences
+    public static void findOccurrence(String str, int idx, char element, int[] result)
     {
-        if(idx == str.length())
+        if (idx == str.length())
         {
-        System.out.println(first);
-        System.out.println(last);
-        return;
+            return; // Base case: End of the string
         }
-            char currChar = str.charAt(idx);
-                if(currChar == element)
-                {
-                    if(first == -1)
-                    {
-                        first = idx;
-                    }
-                    else
-                    {
-                        last = idx;
-                    }
-                }
-                findOccurance(str, idx + 1, element);
+        // Get the current character
+        char currChar = str.charAt(idx);
+
+        // Check if it matches the target element
+        if (currChar == element)
+        {
+            if (result[0] == -1)
+            {
+                result[0] = idx; // Update first occurrence
+            }
+            result[1] = idx; // Update last occurrence
+        }
+        // Recursive call
+        findOccurrence(str, idx + 1, element, result);
     }
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         String str = "abaacdaefaah";
-        findOccurance(str, 0,'a');
+        char element = 'a';
+        
+        // Array to store first and last occurrence
+        int[] result = {-1, -1};
+
+        // Call the recursive function
+        findOccurrence(str, 0, element, result);
+
+        // Print the results
+        System.out.println("First Occurrence: " + result[0]);
+        System.out.println("Last Occurrence: " + result[1]);
     }
 }
