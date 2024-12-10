@@ -1,58 +1,59 @@
 package Backtracking.SudokuSolver.src;
-// Write a program to solve a Sudoku puzzle by filling the empty cells.
-// A sudoku solution must satisfy all of the following rules:
-//1. Each of the digits 1-9 must occur exactly once in each row.
-//2. Each of the digits 1-9 must occur exactly once in each column.
-//3. Each of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.
-// The '.' character indicates empty cells.
-
-public class Solution 
+// The Solution class contains the logic for solving the Sudoku puzzle
+public class Solution
 {
-    public boolean isSafe(char[][] board, int row, int col, int number) 
+    // Method to check if it's safe to place a number in a given cell
+    public boolean isSafe(char[][] board, int row, int col, int number)
     {
-        for (int i = 0; i < board.length; i++) 
+        // Check if the number exists in the current column
+        for (int i = 0; i < board.length; i++)
         {
-            if (board[i][col] == (char) (number + '0')) 
+            if (board[i][col] == (char) (number + '0'))
             {
-                return false;
+                return false;  // The number already exists in the column
             }
         }
-       
-        for (int j = 0; j < board.length; j++) 
+
+        // Check if the number exists in the current row
+        for (int j = 0; j < board.length; j++)
         {
-            if (board[row][j] == (char) (number + '0')) 
+            if (board[row][j] == (char) (number + '0'))
             {
-                return false;
+                return false;  // The number already exists in the row
             }
         }
-       
-        int sr = 3 * (row / 3);
-        int sc = 3 * (col / 3);
-       
-        for (int i = sr; i < sr + 3; i++) 
+
+        // Check if the number exists in the current 3x3 sub-box
+        int sr = 3 * (row / 3); // Starting row of the 3x3 sub-box
+        int sc = 3 * (col / 3); // Starting column of the 3x3 sub-box
+
+        // Iterate through the 3x3 sub-box
+        for (int i = sr; i < sr + 3; i++)
         {
-            for (int j = sc; j < sc + 3; j++) 
+            for (int j = sc; j < sc + 3; j++)
             {
-                if (board[i][j] == (char) (number + '0')) 
+                if (board[i][j] == (char) (number + '0'))
                 {
-                    return false;
+                    return false;  // The number already exists in the sub-box
                 }
             }
         }
-        return true;
+        return true;  // The number can be safely placed in the cell
     }
-   
-    public boolean helper(char[][] board, int row, int col) 
+    // Recursive helper function to solve the Sudoku puzzle
+    public boolean helper(char[][] board, int row, int col)
     {
-        if (row == board.length) 
+        // If we've reached the end of the board, return true (solution found)
+        if (row == board.length)
         {
             return true;
         }
-       
-        int nrow = 0;
-        int ncol = 0;
-       
-        if (col == board.length - 1) 
+
+        int nrow = 0;  // Row for the next recursive call
+        int ncol = 0;  // Column for the next recursive call
+
+        // Move to the next cell in the row or to the next row if we are at the last column
+        if (col == board.length - 1)
         {
             nrow = row + 1;
             ncol = 0;
@@ -60,32 +61,34 @@ public class Solution
             nrow = row;
             ncol = col + 1;
         }
-       
-        if (board[row][col] != '.') 
+        // If the current cell is not empty (i.e., it is a given number), move to the next cell
+        if (board[row][col] != '.')
         {
-            return helper(board, nrow, ncol);
+            return helper(board, nrow, ncol);  // Recursively check the next cell
         } else {
-            for (int i = 1; i <= 9; i++) 
+            // Try placing each number (1-9) in the empty cell
+            for (int i = 1; i <= 9; i++)
             {
-                if (isSafe(board, row, col, i)) 
+                // If placing the number is safe, place it and recursively try to solve the rest
+                if (isSafe(board, row, col, i))
                 {
-                    board[row][col] = (char) (i + '0');
-                    if (helper(board, nrow, ncol)) 
+                    board[row][col] = (char) (i + '0');  // Place the number in the cell
+                    if (helper(board, nrow, ncol))  // Recursively solve the next cells
                     {
-                        return true;
-                    } 
-                    else 
+                        return true;  // If solving the next cells is successful, return true
+                    }
+                    else
                     {
-                        board[row][col] = '.';
+                        board[row][col] = '.';// Backtrack: Remove the number if it doesn't lead to a solution
                     }
                 }
             }
         }
-        return false;
+        return false;  // Return false if no valid number could be placed in the current cell
     }
-   
-    public void solveSudoku(char[][] board) 
+    // Main method to solve the Sudoku puzzle
+    public void solveSudoku(char[][] board)
     {
-        helper(board, 0, 0);
+        helper(board, 0, 0);  // Start solving from the first cell (0, 0)
     }
- }
+}
