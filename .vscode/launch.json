@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DiameterOfTree2",
+            "request": "launch",
+            "mainClass": "BinaryTree.DiameterOfTree2",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
             "name": "DiameterOfNode2",
             "request": "launch",
             "mainClass": "BinaryTree.DiameterOfNode2",
