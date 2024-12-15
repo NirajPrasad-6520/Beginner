@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DiameterOfNode2",
+            "request": "launch",
+            "mainClass": "BinaryTree.DiameterOfNode2",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "ArmStrongNumber3",
+            "request": "launch",
+            "mainClass": "ArmStrongNumber3",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "ArmStrongNumber2",
+            "request": "launch",
+            "mainClass": "ArmStrongNumber2",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
+            "name": "ArmStrongNumber",
+            "request": "launch",
+            "mainClass": "ArmStrongNumber",
+            "projectName": "Beginner_eaa3b8ed"
+        },
+        {
+            "type": "java",
             "name": "PrimeNumber",
             "request": "launch",
             "mainClass": "PrimeNumber",
