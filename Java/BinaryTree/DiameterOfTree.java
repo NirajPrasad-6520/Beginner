@@ -1,4 +1,5 @@
 package BinaryTree;
+//Number of Nodes in the longest path between ant 2 nodes.
 //Approach 1= 0(n^2)
 class Node
 {
