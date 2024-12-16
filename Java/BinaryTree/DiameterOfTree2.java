@@ -1,50 +1,60 @@
 package BinaryTree;
-//Number of Nodes in the longest path between ant 2 nodes.
-//Approach 2 : 0(n)
+// Number of Nodes in the Longest Path Between Any Two Nodes
+// Optimized Approach: O(n)
+
 class Node
 {
     int data;
-    Node left , right;
+    Node left, right;
 
+    // Constructor to initialize node data
     public Node(int item)
     {
-        data = item ;
+        data = item;
         left = right = null;
     }
 }
+
 public class DiameterOfTree2
 {
+    // Helper class to store both height and diameter information
     static class TreeInfo
     {
-        int ht;
-        int diam;
+        int height;
+        int diameter;
 
-        TreeInfo(int ht, int diam)
+        TreeInfo(int height, int diameter)
         {
-            this.ht = ht;
-            this.diam = diam;
+            this.height = height;
+            this.diameter = diameter;
         }
     }
 
-    public static TreeInfo diameter2(Node root)
+    // Recursive function to calculate height and diameter
+    public static TreeInfo calculateDiameter(Node root)
     {
-        if(root == null)
+        if (root == null)
         {
+            // For null nodes, height and diameter are 0
             return new TreeInfo(0, 0);
         }
-        TreeInfo left = diameter2(root.left);
-        TreeInfo right = diameter2(root.right);
 
-        int myHeight = Math.max(left.ht, right.ht) + 1;
+        // Recursive calls for left and right subtrees
+        TreeInfo leftInfo = calculateDiameter(root.left);
+        TreeInfo rightInfo = calculateDiameter(root.right);
 
-        int diam1 = left.diam;
-        int diam2 = right.diam;
-        int diam3 = left.ht + right.ht + 1;
+        // Height of the current node
+        int currentHeight = Math.max(leftInfo.height, rightInfo.height) + 1;
 
-        int myDiam = Math.max(Math.max(diam1, diam2), diam3);
+        // Diameter calculation:
+        // 1. Diameter in the left subtree
+        // 2. Diameter in the right subtree
+        // 3. Diameter passing through the root
+        int diameterThroughRoot = leftInfo.height + rightInfo.height + 1;
+        int currentDiameter = Math.max(Math.max(leftInfo.diameter, rightInfo.diameter), diameterThroughRoot);
 
-        TreeInfo myInfo = new TreeInfo(myHeight, myDiam);
-        return myInfo;
+        // Return combined TreeInfo
+        return new TreeInfo(currentHeight, currentDiameter);
     }
     public static void main(String[] args)
     {
@@ -55,6 +65,6 @@ public class DiameterOfTree2
         root.left.left = new Node(4);
         root.left.right = new Node(5);
 
-        System.out.println(diameter2(root).diam);
+        System.out.println("Diameter of the tree: " + calculateDiameter(root).diameter);
     }
 }
