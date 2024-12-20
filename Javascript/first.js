@@ -3,7 +3,7 @@
      // title : "ball pen",
      // rating : 4,
      // is_deal_of_the_day : true,
-     // price : 270,   
+     // price : 270,
 //}
     //  console.log(product);
      // console.log(typeof product["rating"]);
@@ -35,7 +35,7 @@
 //unary operator.
     // console.log("a =",a, "b =",b);
     // a++;
-    // console.log("a =",a); 
+    // console.log("a =",a);
 
     // a--;
     // console.log("a =",a);
@@ -69,7 +69,7 @@
     //    {
     //     console.log(num,"is Odd");
     //    }
-       
+
 //Ternary Operators.
     // let age=55;
     // let results=age >=18 ? "Adult" : "Not Adult";   
@@ -80,7 +80,7 @@
     if(a % 5 === 0)
     {
         console.log(a,"is multiple of 5");
-    }    
+    }
     else
     {
         console.log(a,"is not multiple of 5");
@@ -118,5 +118,5 @@
 
     else if(marks < 40)
     {
-         console.log("Fail");
+    console.log("Fail");
     }
