@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      body {background-color: coral;} /*whole webpage color*/
-      ol{
-        font-size: medium;
-      }
-      li{
-        font-size: large;
-      }
-      dd{
-        font-size: large;
-      }
-      table,th,td{
+      /* General body styling */
+      body { background-color: coral; } /*whole webpage color*/
+      
+      /* Ordered list */
+      ol { font-size: medium; }
+      li { font-size: large; }
+
+      /* Definition list */
+      dd { font-size: large; }
+
+      /* Table styling */
+      table, th, td {
         border: 1px solid black;
         margin-left: auto;
         margin-right: auto;
@@ -23,15 +24,15 @@
         width: 500px;
         text-align: center;
       }
-      th{
-        background-color: aqua;
-      }
-      caption{
+      th { background-color: aqua; }
+      caption {
         font-size: large;
         font-weight: 600;
         text-decoration: underline;
       }
-      .container{   /*in <form>tag for <div>tag*/
+
+      /* Form container */
+      .container {   /*in <form>tag for <div>tag*/
         width: 50%;
         margin-left: auto;
         margin-right: auto;
@@ -40,12 +41,16 @@
         margin-top: auto;
         padding: 20px;
       }
-      h2{
+
+      /* Section headings */
+      h2 {
         text-align: center;
         text-decoration: underline;
         background-color:rgba(160, 21, 160, 0.384)
       }
-      input[type=text] {
+
+      /* Input fields */
+      input[type = text] {
         width: 90%;
         padding: 15px;
         margin: 5px 0 22px 0;
@@ -53,15 +58,15 @@
         border: none;
         background: #f1f1f1;
 }
-      input[type=text]:focus {
+      input[type = text]:focus {
         background-color: orange;
         outline: none;
 }
-      input[type=email]:focus {
+      input[type = email]:focus {
         background-color: orange;
         outline: none;
 }
-      input[type=email] {
+      input[type = email] {
         width: 90%;
         padding: 15px;
         margin: 5px 0 22px 0;
@@ -69,11 +74,11 @@
         border: none;
         background: #f1f1f1;
 }
-     input[type=password]:focus {
+      input[type = password]:focus {
         background-color: orange;
         outline: none;
 }
-      input[type=password] {
+      input[type = password] {
         width: 90%;
         padding: 15px;
         margin: 5px 0 22px 0;
@@ -81,7 +86,9 @@
         border: none;
         background: #f1f1f1;
 }
-      .registerbn {            /*submit button*/
+
+      /* Submit button styling */
+      .registerbn {
         background-color:yellowgreen;
         color: black;
         font-weight: 700;
@@ -96,105 +103,123 @@
       .registerbn:hover {
         opacity: 15;
         background-color: seagreen;
-}select
-{
-  background-color:mediumpurple;
-  font-size: large;
 }
-option{
-  background-color: #4CAF50;
-}
-iframe{
+
+/* Dropdown styling */
+select
+{ background-color:mediumpurple; font-size: large; }
+option { background-color: #4CAF50; }
+
+/* iFrame styling */
+iframe {
   height: 55ch;
   width: 50%;
   margin-left: 25%;
 }
-#hdd3{ /*heading for webpage*/
+
+#hdd3 { /*heading for webpage*/
   background-color: #4CAF50;
   border: 1px solid black;
   text-align: center;
 }
-header{
-  background-color: #303030;  
-  height: 80px; 
+
+header {
+  background-color: #303030;
+  height: 80px;
   width: 100%"
 }
-#hdd2{ /*header section*/
-  font-size: 30px; 
-  color: white; 
-  text-align: center; 
+
+#hdd2 { /*header section*/
+  font-size: 30px;
+  color: white;
+  text-align: center;
   padding-top: 15px;
 }
-#li1,#li2,#li3,#li4{ /*navigation bar list*/
+
+#li1, #li2, #li3, #li4 { /*navigation bar list*/
   text-decoration: none;
   display: inline-block;
   padding: 10px;
 }
-a{
-  text-decoration: none;
-}
+
+a { text-decoration: none; }
+
+/* Image styling */
 img {
   display: block;
-  height: 250px;; 
+  height: 250px;;
   margin-left: auto;
   margin-right: auto;
-}
+    }
   </style>
 </head>
 
 <body>
-  <h1 id="hdd3">Hello World!</h1><!--heading tag<h1>-->
+  <!-- Main heading for the webpage -->
+  <h1 id = "hdd3" > Hello World! </h1><!--heading tag<h1>-->
+
   <!--<Image> Tag-->
-  <img src="mathematical.jpg" alt="mathematical" ><!--<alt>tag is use for if image doesn't show then alt tag help to which type image is-->
+  <img src = "mathematical.jpg" alt = "mathematical" ><!--<alt>tag is use for if image doesn't show then alt tag help to which type image is-->
+
   <!--<Header> tags-->
   <header>
-  <h1 id="hdd2">Welcome to MyFirstWebpage</h1>
-   </header>
-   <!--Navigation tags-->
-	<nav style="background-color:#bcdeef;"><!--here use <style> tag for inline effect and inline has first priority-->
-		<h1 style="text-align: center;">Navgation Links</h1>
+  <h1 id = "hdd2">Welcome to MyFirstWebpage</h1>
+  </header>
+
+  <!--Navigation tags-->
+	<nav style = "background-color:#bcdeef;" ><!--here use <style> tag for inline effect and inline has first priority-->
+		<h1 style = "text-align: center;" > Navgation Links </h1>
 		<ul>
-			<li id="li1"><a href="#">link1</a></li>
-			<li id="li2"><a href="#">link2</a></li>
-			<li id="li3"><a href="#">link3</a></li>
-			<li id="li4"><a href="#">link4</a></li>
+			<li id = "li1" ><a href= "#" > link1 </a></li>
+			<li id = "li2"><a href="#"> link2 </a></li>
+			<li id = "li3"><a href="#"> link3 </a></li>
+			<li id = "li4"><a href="#"> link4 </a></li>
 		</ul>
 	</nav>
+
+  <!-- Introduction section -->
   <!--<DIV> Tags-->
   <div>
     <p>Welcome to javascript of the first programming language</p>
   </div>
+
   <!--<Section> tag-->
-<section style="background-color:#c9e7ee; width: 100%; border: 1px solid black;">  
-    <h2>Introduction to HTML</h2>  
-    <p>HTML is a markup language which is used for creating attractive web pages with the help of styling, and which looks in a nice format on a web browser..</p>  
+  <section style = "background-color:#c9e7ee; width: 100%; border: 1px solid black;">
+    <h2> Introduction to HTML </h2>
+    <p>HTML is a markup language which is used for creating attractive web pages with the help of styling, and which looks in a nice format on a web browser..</p>
   </section>  <br><!--<br>tag for break line-->
+
   <!--<Article> tag-->
-<article style="width: 100%; border:2px solid black; background-color: #fff0f5;">  
-    <h2>History of Computer</h2>  
-    <p>Write your content here for the history of computer</p>  
+<article style="width: 100%; border:2px solid black; background-color: #fff0f5;">
+    <h2>History of Computer</h2>
+    <p>Write your content here for the history of computer</p>
 </article>
+
 <!--<Aside> tag-->
-<aside style="background-color:#e6e6fa">  
-    <h2>Sidebar information</h2>  
-    <p>This conatins information which will represent like a side bar for a webpage</p>  
-  </aside> 
+<aside style="background-color:#e6e6fa">
+    <h2>Sidebar information</h2>
+    <p>This conatins information which will represent like a side bar for a webpage</p>
+  </aside>
+
   <!--<Footer> tag-->
-<footer style="background-color: #f0f8ff; width: 100%; text-align: center;">  
-    <h3>Footer Example</h3>  
-    <p>© Copyright 2018-2020. </p>  
-</footer>  
+<footer style="background-color: #f0f8ff; width: 100%; text-align: center;">
+    <h3>Footer Example</h3>
+    <p>© Copyright 2018-2020. </p>
+</footer>
+
 <!--<Details> tag-->
-<details style="background-color: #f5deb3">  
-    <summary>This is visible section: click to show other details</summary>  
-    <p>This section only shows if user want to see it. </p>  
- </details>  
- <!--<Summary> tag-->
-<details>  
-    <summary>HTML is acronym for?</summary>  
+<details style="background-color: #f5deb3">
+    <summary>This is visible section: click to show other details</summary>
+    <p>This section only shows if user want to see it. </p>
+</details>
+
+<!--<Summary> tag-->
+<details>
+    <summary>HTML is acronym for?</summary>
     <p style="color: blue; font-size: 20px;"><a href="https://www.javatpoint.com/what-is-html">Hypertext Markup Language</a></p>  <!--anchor<a>tag is use for link the text to go other webpages-->
- </details> 
+</details>
   <h2>Lists of fruits</h2>
+
 <!--Ordered list-->
     <ol reversed><!--<Reversed> tag-->
       <li>Mango</li>
@@ -219,10 +244,13 @@ img {
       <dd><b style="background-color:springgreen;">Java</b> is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.<!--here bold<b>tag is use for bold the words/sentence-->
 
         Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995. James Gosling is known as the father of Java. Before Java, its name was Oak. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.</dd><hr><!--here horizontal rule<hr>tag that is used to separate content-->
+
       <dt><strong>HTML</strong></dt><!--The <strong> tag is used to define text with strong importance-->
       <dd>HTML is an acronym which stands for <span style="background-color: greenyellow;"><em>HyperText Markup Language</em></span> which is used for creating web pages and web applications. Let's see what is meant by Hypertext Markup Language, and Web page.</dd><hr>
+
       <dt><strong>PYTHON</strong></dt><!--here use <span>tag for inline effect and <em>tag is used to emphasize text, usually by making it italic-->
       <dd><mark><u>Python</u></mark> is a high-level, interpreted, general-purpose programming language known for its simplicity and readability. It was created by Guido van Rossum and first released in 1991.</dd><hr><!--<mark>tag for highlight some part of the text -->
+
       <dt><strong>CSS</strong></dt>
       <dd>CSS stands for <mark>Cascading style sheets</mark>. It describes to the user how to display HTML elements on the screen in a proper format. CSS is the language that is used to style HTML documents. In simple words, cascading style sheets are a language used to simplify the process of making a webpage.</dd>
     </dl><hr>
@@ -246,11 +274,11 @@ img {
     <!--<table> tag-->
     <h2>Mobile's</h2>
     <table>
-      <caption>Mobile Details</caption><!--heading for table--> 
+      <caption>Mobile Details</caption><!--heading for table-->
       <tr>
-         <th>Device</th>
-         <th>Brand</th>
-         <th colspan="3">Specifications</th><!--colspan for merge 3 columns-->
+        <th>Device</th>
+        <th>Brand</th>
+        <th colspan="3">Specifications</th><!--colspan for merge 3 columns-->
       </tr>
       <tr>
           <td rowspan="3"> Smartphone</td><!--rowspan for merge 3 rows-->
@@ -259,38 +287,38 @@ img {
           <td style="font-weight: bold; background-color: yellow;"> Storage</td>
       </tr>
       <tr>
-         <td> iPhone 12 Pro</td>
-         <td> 256GB</td>
+        <td> iPhone 12 Pro</td>
+        <td> 256GB</td>
       </tr>
       <tr>
-         <td> iPhone SE</td>
-         <td> 128GB</td>
+        <td> iPhone SE</td>
+        <td> 128GB</td>
       </tr>
       <tr>
-         <td>Laptop</td>
-         <td> HP</td>
-         <td colspan="2" style="text-align: left;">15.6" Display</td>
+        <td>Laptop</td>
+        <td> HP</td>
+        <td colspan="2" style="text-align: left;">15.6" Display</td>
       </tr>
       <tr>
-         <td>Tablet</td>
-         <td> Samsung</td>
-         <td colspan="2" style="text-align: left;">10.5" Display</td>
-     </tr>
+        <td>Tablet</td>
+        <td> Samsung</td>
+        <td colspan="2" style="text-align: left;">10.5" Display</td>
+      </tr>
     </table><hr><br>
 
     <!--<Form> tag-->
     <label><h2>Form tag</h2></label>
     <div class="container">
-       <form >
-           Enter your name: <input type="text" name="username" placeholder="Enter your Full Name"><br><br>
+      <form >
+          Enter your name: <input type="text" name="username" placeholder="Enter your Full Name"><br><br>
 
-           <label for="firstname">First Name :</label>
+          <label for="firstname">First Name :</label>
             <input type="text" id="firstname" name="firstname" placeholder="First Name :" required><br><br>
 
-           <label for="lastname">Last Name :</label> 
-           <input type="text" id="lastname" name="lastname" placeholder="Last Name" required><br><br>
+          <label for="lastname">Last Name :</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Last Name" required><br><br>
 
-           <label for="textarea">Enter your Address</label> <br><br>
+          <label for="textarea">Enter your Address</label> <br><br>
           <textarea rows="5" cols="83" id="textarea" placeholder="Address"></textarea><br><br>
 
           <label for="email">Email : </label>
@@ -304,30 +332,30 @@ img {
           <label for="male">
             <input type="radio" id="male" name="gender"  value="Male">Male</label>
 
-            <label for="female"> 
+            <label for="female">
           <input type="radio" id="female" name="gender" value="Female"/>Female </label><br><br>
 
           Hobby : <br>
           <input type="checkbox" id="circket" name="circket" value="circket">
-           <label for="circket">Circket</label><br>
+          <label for="circket">Circket</label><br>
 
-           <input type="checkbox" id="football" name="football" value="football">
-           <label for="football">Football</label><br>
+          <input type="checkbox" id="football" name="football" value="football">
+          <label for="football">Football</label><br>
 
-           <input type="checkbox" id="hockey" name="hockey" value="hockey">
-           <label for="hockey">Hockey</label><br><br>
+          <input type="checkbox" id="hockey" name="hockey" value="hockey">
+          <label for="hockey">Hockey</label><br><br>
 
-           <input type="submit" value="Submit" class="registerbn"><br><br>
+          <input type="submit" value="Submit" class="registerbn"><br><br>
 
-           <!--<option> tag....drop down list-->
-           <select>
+          <!--<option> tag....drop down list-->
+          <select>
             <option>States</option>
             <option value="Delhi">Delhi</option>
             <option value="pune">Pune</option>
             <option value="lucknow">Lucknow</option>
           </select><br><br>
 
-           <!--<FIELDSET> TAG-->
+          <!--<FIELDSET> TAG-->
         <fieldset>
           <legend>User Information</legend><!--<legend tag is caption for <fieldset>tag-->
 
@@ -340,15 +368,15 @@ img {
           <input type="submit" value="Submit" class="registerbn">
         </fieldset>
         
-       </form><br><br>
-     </div><br><br>
+      </form><br><br>
+    </div><br><br>
 
-     <!--<iframe> tag-->
-     <label><h2>Youtube video iFrame tag </h2></label>
-     <iframe   src="https://www.youtube.com/embed/HcOc7P5BMi4?si=5LlITxFDYZxFhag2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen  name="iframe_a">
-     </iframe><br><br>
-     <!--iframe <target> for a link-->
-     <p><a href="cal.html" target="iframe_a" >Calculator</a></p>
-     <p>This is a calculator website link if you click this 👆👆link then iframe open calculator website </p>
+    <!--<iframe> tag-->
+    <label><h2>Youtube video iFrame tag </h2></label>
+    <iframe   src="https://www.youtube.com/embed/HcOc7P5BMi4?si=5LlITxFDYZxFhag2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen  name="iframe_a">
+    </iframe><br><br>
+    <!--iframe <target> for a link-->
+    <p><a href="cal.html" target="iframe_a" >Calculator</a></p>
+    <p>This is a calculator website link if you click this 👆👆link then iframe open calculator website </p>
 </body>
 </html>
