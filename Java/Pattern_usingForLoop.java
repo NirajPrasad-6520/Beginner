@@ -72,7 +72,7 @@ public class Pattern_usingForLoop
       {
          for(int j = 1 ; j <= rows - i; j++) // Print spaces for centering
             {
-               System.out.print(" ");
+               System.out.print(" ");//this code is same as Mirrored Right Triangle Star Pattern but a small difference in the space.
             }
             for(int j = 0; j <= i; j++) // Print stars for pyramid shape
             {
